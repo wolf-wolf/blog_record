@@ -8,19 +8,25 @@ const indexMap = {
     'interview': '面试',
 }
 
+const host = 'https://wolf-wolf.github.io/blog_record/article'
 const articleIndex = fs.readdirSync(path.resolve(__dirname, './article'))
 
-let content = '';
+let mainContent = '';
 
 articleIndex.forEach(dirName => {
     let mdFilenameList = fs.readdirSync(path.resolve(__dirname, `./article/${dirName}`));
-    content += `## ${indexMap[dirName]}\n\n`;
+    let idxFileContent = `## [${indexMap[dirName]}](${host}/${dirName}/index)\n\n`;
+
     mdFilenameList.forEach(filename => {
         const realFileContent = fs.readFileSync(`./article/${dirName}/${filename}`);
-        content += `*${filename.split('.')[0].split('_').join('-')}*\n\n`
-        content += `${realFileContent}\n`;
+        idxFileContent += `*${filename.split('.')[0].split('_').join('-')}*\n\n`
+        idxFileContent += `${realFileContent}\n`;
     });
+
+    fs.writeFileSync(path.resolve(__dirname, `./article/${dirName}/index.md`), idxFileContent)
+
+    mainContent += idxFileContent;
 })
 
-fs.writeFileSync(path.resolve(__dirname, './README.md'), content)
+fs.writeFileSync(path.resolve(__dirname, './README.md'), mainContent)
 
