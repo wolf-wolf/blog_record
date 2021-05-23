@@ -1,3 +1,5 @@
+[<< 返回首页](https://wolf-wolf.github.io/blog_record)
+
 ## [理论](https://wolf-wolf.github.io/blog_record/article/theory/index)
 
 *2021-05*

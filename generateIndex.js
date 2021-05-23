@@ -8,14 +8,14 @@ const indexMap = {
     'interview': '面试',
 }
 
-const host = 'https://wolf-wolf.github.io/blog_record/article'
+const host = 'https://wolf-wolf.github.io/blog_record'
 const articleIndex = fs.readdirSync(path.resolve(__dirname, './article'))
 
 let mainContent = '';
 
 articleIndex.forEach(dirName => {
     let mdFilenameList = fs.readdirSync(path.resolve(__dirname, `./article/${dirName}`));
-    let idxFileContent = `## [${indexMap[dirName]}](${host}/${dirName}/index)\n\n`;
+    let idxFileContent = `## [${indexMap[dirName]}](${host}/article/${dirName}/index)\n\n`;
 
     mdFilenameList.filter(filename => filename !== 'index.md').forEach(filename => {
         const realFileContent = fs.readFileSync(`./article/${dirName}/${filename}`);
@@ -23,9 +23,11 @@ articleIndex.forEach(dirName => {
         idxFileContent += `${realFileContent}\n`;
     });
 
-    fs.writeFileSync(path.resolve(__dirname, `./article/${dirName}/index.md`), idxFileContent)
-
     mainContent += idxFileContent;
+
+    idxFileContent = `[<< 返回首页](${host})\n\n` + idxFileContent;
+
+    fs.writeFileSync(path.resolve(__dirname, `./article/${dirName}/index.md`), idxFileContent)
 })
 
 fs.writeFileSync(path.resolve(__dirname, './README.md'), mainContent)
