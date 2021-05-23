@@ -17,9 +17,9 @@ articleIndex.forEach(dirName => {
     content += `## ${indexMap[dirName]}\n\n`;
     mdFilenameList.forEach(filename => {
         const realFileContent = fs.readFileSync(`./article/${dirName}/${filename}`);
+        content += `*${filename.split('.')[0].split('_').join('-')}*\n\n`
         content += `${realFileContent}\n`;
     });
-    console.log(content)
 })
 
 fs.writeFileSync(path.resolve(__dirname, './README.md'), content)
