@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## 应用
 
-You can use the [editor on GitHub](https://github.com/wolf-wolf/blog_record/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+1、[前端架构演进 - 从单体到微前端（理论篇）](https://mp.weixin.qq.com/s/eNC69rNqSR8XtXDmw66bVQ)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+本文明确的观点是无论何种技术都是为了解决问题而存在。以作者自身项目为例，拆分了技术/框架变更的操作过程，包括了发现问题、变更时机、目标、技术选型（使用single-spa，但并未深入讲解）、后备方案、任务拆分等。
 
-### Markdown
+## 面试
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1、[如何一步步 get 大厂前端 offer，或许你可以参考这份成长经历。](https://mp.weixin.qq.com/s/35GC0FHQ47GjQ7GwbFYtUQ)
 
-```markdown
-Syntax highlighted code block
+本文以QA方式介绍了面试的基本准备，重点说明了框架技术的学习步骤、明确适可而止的学习边界。并提供了部分TS、React、《算法》等博客和书籍，可自行查阅。
 
-# Header 1
-## Header 2
-### Header 3
+## 理论
 
-- Bulleted
-- List
+1、[node基础面试事件环？微任务、宏任务？一篇带你飞](https://blog.csdn.net/eeewwwddd/article/details/80862682)
 
-1. Numbered
-2. List
+本文简述了node的概念（运行时）和特性，并与`java`进行了对比：`node` 有更好的并发处理性能，能更快地I/O操作（操作数据库），`node`不适用于大型密集CPU预算的服务。
 
-**Bold** and _Italic_ and `Code` text
+## 工具
 
-[Link](url) and ![Image](src)
-```
+1、[JavaScript Visualizer 9000](https://www.jsv9000.app/)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wolf-wolf/blog_record/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+用于查看JavaScript的内部事件循环，微任务，宏任务的可视化示例
