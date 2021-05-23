@@ -17,7 +17,7 @@ articleIndex.forEach(dirName => {
     let mdFilenameList = fs.readdirSync(path.resolve(__dirname, `./article/${dirName}`));
     let idxFileContent = `## [${indexMap[dirName]}](${host}/${dirName}/index)\n\n`;
 
-    mdFilenameList.forEach(filename => {
+    mdFilenameList.filter(filename => filename !== 'index.md').forEach(filename => {
         const realFileContent = fs.readFileSync(`./article/${dirName}/${filename}`);
         idxFileContent += `*${filename.split('.')[0].split('_').join('-')}*\n\n`
         idxFileContent += `${realFileContent}\n`;
