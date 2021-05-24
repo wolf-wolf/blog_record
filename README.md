@@ -1,4 +1,4 @@
-## [undefined](https://wolf-wolf.github.io/blog_record/article/algorithm/index)
+## [算法](https://wolf-wolf.github.io/blog_record/article/algorithm/index)
 
 *2021-05*
 
