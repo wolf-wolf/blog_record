@@ -21,3 +21,7 @@
  - `close callback queue`，
 
 并针对各个队列的应用以及整体的先后顺序进行了详细介绍
+
+3、[React hooks: not magic, just arrays](https://medium.com/@ryardley/react-hooks-not-magic-just-arrays-cd4f1857236e)
+
+本文发于2018年，以可视化的方式讲解了React Hook的基本机制和原理
