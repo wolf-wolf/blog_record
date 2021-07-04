@@ -66,6 +66,34 @@
 1、[彻底理解浏览器的缓存机制（http缓存机制）](https://www.cnblogs.com/chengxs/p/10396066.html)
 
 文章根据Http头，分别介绍了浏览器的强制缓存和协商缓存的方法
+
+2、[A deep dive into React Fiber internals](https://blog.logrocket.com/deep-dive-into-react-fiber-internals/)
+
+文章主要讲解一下内容：
+
+- React中元素的分类
+- 帧率
+- JS引擎工作流程
+- fiber node的数据结构及含义
+- fiber的更新算法
+
+3、[精读《Webpack5 新特性 - 模块联邦》](https://zhuanlan.zhihu.com/p/115403616)
+
+文章讲解了模块联邦（ModuleFederationPlugin）的基本原理及针对模块复用的应用方式
+
+4、[阔别两年，webpack 5 正式发布了！](https://juejin.cn/post/6882663278712094727)
+
+文章详细介绍了webpack 5相对于之前版本的更新内容
+
+*2021-07*
+
+1、[Deep dive: How do React hooks really work?](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/)
+
+文章介绍了React Hook基于闭包的基本实现原理，并且简易的模拟了`useState`和`useEffect`的实现方式，重点如下：
+
+- hook的实现基于闭包，闭包数据存储了上次的状态数据，并存储了数据对应的索引，因此在hook的规则中要求：hook需要保证执行顺序，不可卸载条件判断或循环中
+- 在每次进行render时，会重置数据索引，并按照之前各个hook的执行顺序进行新老数据diff，从而进行更新
+
 ## [工具](https://wolf-wolf.github.io/blog_record/article/tools/index)
 
 *2021-05*
