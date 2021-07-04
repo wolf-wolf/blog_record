@@ -42,6 +42,16 @@
 
 本文以QA方式介绍了面试的基本准备，重点说明了框架技术的学习步骤、明确适可而止的学习边界。并提供了部分TS、React、《算法》等博客和书籍，可自行查阅。
 
+## [官方文档](https://wolf-wolf.github.io/blog_record/article/official/index)
+
+*2021-07*
+
+1、[NPM 官方文档](https://docs.npmjs.com/)
+
+2、[Node 学习文档](https://nodejs.dev/learn)
+
+3、[Yarn 官方文档](https://yarnpkg.com/)
+
 ## [理论](https://wolf-wolf.github.io/blog_record/article/theory/index)
 
 *2021-05*

@@ -7,6 +7,7 @@ const indexMap = {
     'theory': '理论',
     'interview': '面试',
     'algorithm': '算法',
+    'official': '官方文档',
 }
 
 const host = 'https://wolf-wolf.github.io/blog_record'
