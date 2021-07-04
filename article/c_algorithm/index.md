@@ -1,6 +1,6 @@
 [<< 返回首页](https://wolf-wolf.github.io/blog_record)
 
-## [算法](https://wolf-wolf.github.io/blog_record/article/algorithm/index)
+## [C、算法](https://wolf-wolf.github.io/blog_record/article/c_algorithm/index)
 
 *2021-05*
 

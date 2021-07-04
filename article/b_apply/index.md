@@ -1,6 +1,6 @@
 [<< 返回首页](https://wolf-wolf.github.io/blog_record)
 
-## [应用](https://wolf-wolf.github.io/blog_record/article/apply/index)
+## [B、应用](https://wolf-wolf.github.io/blog_record/article/b_apply/index)
 
 *2021-05*
 

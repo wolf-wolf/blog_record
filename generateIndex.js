@@ -2,12 +2,12 @@ const fs = require('fs');
 const path = require('path');
 
 const indexMap = {
-    'apply': '应用',
-    'tools': '工具',
-    'theory': '理论',
-    'interview': '面试',
-    'algorithm': '算法',
-    'official': '官方文档',
+    'a_theory': 'A、理论',
+    'b_apply': 'B、应用',
+    'c_algorithm': 'C、算法',
+    'd_interview': 'D、面试',
+    'e_tools': 'E、工具',
+    'f_official': 'F、官方文档',
 }
 
 const host = 'https://wolf-wolf.github.io/blog_record'
